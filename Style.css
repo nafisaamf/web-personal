@@ -1,0 +1,166 @@
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variable*/
+:root{
+    --primary-color: #00bfff;
+    --dark-color:#0f0f0f;
+    --gray-color: gray;
+    --yellow-color:yellow;
+    --blue-color:blue;
+    
+    --h1-font-size: 40px;
+    --h2-font-size: 30px;
+    --small-font-size: 15px;
+
+}
+/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body{
+    background-image: url(https://cdn.wallpapersafari.com/81/18/WewaSt.jpg);
+}
+
+/*GLOBAL CSS*/
+section {
+    padding: 70px 0;
+
+}
+
+section .section-title{
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+.btn-orange {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/*CSS PER SECTION*/
+
+/*NAVBAR*/
+.navbar{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+/*HEADER*/
+.header-section .header-title{
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+    color: var(--dark-color);
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: .3s;
+}
+
+.header-section.header-skill:hover i {
+    transform:rotate(-45deg);
+}
+
+.header-section .header-img {
+    width: 70%;
+}
+
+/*PORTFOLIO*/
+
+.portfolio-section .card .card-img-top{
+    height: 250px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.src {
+    border-width: 100px;
+}
+
+@media screen and (max-widht: 768px) {
+    .portfolio-section .card .card-img-top{
+        height: 100px;
+    }
+}
+
+/*SKILLS*/
+
+.skills-section, footer{
+    background-color: black;
+    padding-bottom: 150px;
+}
+
+.skills-section .progress-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress {
+    background-color: var(--primary-color);
+}
+
+.PP_WORKING{
+    width: 100%;
+    aspect-ratio: 1/1,3;
+    padding-left: 50px;
+}
+
+/* TIMELINE */
+
+.timeline-section, footer{
+    padding-bottom: 250px;
+}
+
+/* NEWS */
+.news-section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.news-section .card .card-img-top{
+    height: 250px;
+    width: 50%;
+    object-fit: cover;
+
+}
+
+/* CONTACT */
+.contact{
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer{
+    background-color: black;
+    padding-bottom: 50px;
+}
